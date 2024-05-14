@@ -5,7 +5,9 @@
 //  Created by Brian Vo on 5/12/24.
 //
 
+import SwiftData
 import SwiftUI
+
 
 @main
 struct BookWormApp: App {
@@ -13,5 +15,6 @@ struct BookWormApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Book.self)
     }
 }
